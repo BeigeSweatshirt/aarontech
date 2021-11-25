@@ -63,18 +63,15 @@ function Ticket() {
             <h1 id = "ticketHeader" className = {classes.wrapper}>
                 My Tickets
             </h1>
-            <input  className = {classes.textfield}  type="text" id="user" placeholder = 'Username'></input>
-            <br/>
-            <input className = {classes.textfield}  type="text" id="email" placeholder = 'Email'></input>
-            <br/>
-            <input className = {classes.textfield}  type="password" id="pass" placeholder = 'Password'></input>
-            <br/>
-            <input className = {classes.textfield}  type="password" id="pass_confirm" placeholder = 'Confirm Password'></input>
-            <br/>
-            <textarea className = {classes.textfield} id="description" cols="30" rows="4" placeholder="Write about your problem"></textarea>
-            <br/>
-            
-
+              <input  className = {classes.textfield}  type="text" id="user" placeholder = 'Username'></input>
+              <br></br>
+              <input className = {classes.textfield}  type="text" id="email" placeholder = 'Email'></input>
+              <br></br>
+              <input className = {classes.textfield}  type="password" id="pass" placeholder = 'Password'></input>
+              <br></br>
+              <input className = {classes.textfield}  type="password" id="pass_confirm" placeholder = 'Confirm Password'></input>
+              <br></br>
+              <textarea className = {classes.textfield} id="description" cols="30" rows="4" placeholder="Write about your problem"></textarea>
              <StyledButton onClick = { handleSumbmit}
             >Generate Ticket </StyledButton> 
              <br/>

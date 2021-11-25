@@ -7,7 +7,7 @@ import AddIcon from '@material-ui/icons/Add';
 import { Button } from "@material-ui/core";
 import { useNavigate } from 'react-router';
 import { withStyles } from '@material-ui/core/styles';
-import newTicket from 'TicketTable.js';
+import newTicket from './TicketTable';
 
 
 const StyledButton = withStyles({
@@ -51,12 +51,6 @@ function Account() {
   return(
     <div className = "App">
   <NavBar/>
-  <h1>
-     User Name: <span id = "NAME"/>
-                <span id = "USER"/>
-  </h1>
-  <StyledButton  onClick={ () => { newTicket(); }}><AddIcon style={{fill: "#4360A6", height:"125", width:"125"}}/>Create a new Ticket</StyledButton> 
-  <br/><br/><br/>
   <TicketTable/>
   <Footer/>
   </div>

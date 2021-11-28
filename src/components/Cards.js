@@ -1,9 +1,10 @@
 import React from 'react'
-import CardItems from './CardItems'
 import './Cards.css';
+import CardItems from './CardItems'
 import malware from '../photos/malware.jpg'
 import backup from '../photos/backup.jpg'
 import hardware from '../photos/hardware.jpg'
+
 function Cards() {
     return (
         <div className='cards'>
@@ -12,11 +13,11 @@ function Cards() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItems
-                            src = {malware}
+                            src={malware}
                             title='Malware Removal and Tune-Ups'
                             text="Malware concerns? Slow performance? Leave it to us! We offer tune-ups and malware removal with industry-standard tools to get your computer running like new again." />
                         <CardItems
-                            src= {backup}
+                            src={backup}
                             title='Backups and Recovery'
                             text="Your data is important to you. We offer backup and recovery solutions for your home and small business to ensure it stays in one piece." />
                         <CardItems

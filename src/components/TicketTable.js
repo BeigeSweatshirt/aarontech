@@ -1,24 +1,44 @@
 import React, { useState } from "react";
 import './TicketTable.css';
-import data from './mock-data.json';
+import defaultTable from './mock-data.json';
 
 function TicketTable() {
-  const [tickets, setTickets] = useState(data);
+  const [table, setTable] = useState(() => {
+    try {
+      const value = sessionStorage.getItem('tableStorage');
 
-  const handleAddFormSubmit = (event) => {
+      if (value) return JSON.parse(value);
+      else {
+        sessionStorage.setItem('tableStorage', JSON.stringify(defaultTable));
+        return defaultTable;
+      }
+    } catch (err) {
+      console.log("problem with value");
+    }
+  });
+
+  const handleAddTicketSubmit = (event) => {
     event.preventDefault();
-    
-    var newTicket = {
-      id: tickets.at(-1).id + 1,                          //Gets Last ID of table and increments it by one
-      date: todaysDate(),                                 //Returns date in MM/DD/YYYY format
-      status: "Received",                                 //...Just returns "received"
-      description: document.getElementById("desc").value  //Returns the description passed to it.
-    };
-    const newTickets = [...tickets, newTicket];
-    setTickets(newTickets);
-  };
 
-  var todaysDate = () => {
+    const newRow = newTicketRow(document.getElementById('desc').value);
+    const updatedTable = [...table, newRow];
+
+    sessionStorage.setItem('tableStorage', JSON.stringify(updatedTable));
+    setTable(JSON.parse(sessionStorage.getItem('tableStorage')));
+  }
+
+  const newTicketRow = (desc) => {
+    const row = {
+      id: table.at(-1).id + 1,
+      date: getTodaysDate(),
+      status: "Received",
+      description: desc
+    };
+
+    return row;
+  }
+
+  const getTodaysDate = () => {
     var today = new Date();
     var dd = String(today.getDate() + 2).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -28,37 +48,39 @@ function TicketTable() {
   }
 
   return <div className="app-container">
-  <table>
-    <thead>
-      <tr>
-        <th>Ticket ID</th>
-        <th>Date</th>
-        <th>Status</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      {tickets.map((ticket) => (
-        <tr>
-          <td>{ticket.id}</td>
-          <td>{ticket.date}</td>
-          <td>{ticket.status}</td>
-          <td>{ticket.description}</td>
+    <table className="table">
+      <thead>
+        <tr id="row">
+          <th className="header">Ticket ID</th>
+          <th className="header">Date</th>
+          <th className="header">Status</th>
+          <th className="header">Description</th>
         </tr>
-      ))}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {table.map((row) => (
+          <tr>
+            <td className="data">{row.id}</td>
+            <td className="data">{row.date}</td>
+            <td className="data">{row.status}</td>
+            <td className="data">{row.description}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
 
-  <form onSubmit={handleAddFormSubmit} >
-    <input 
-      id="desc"
-      type="text"
-      name="description"
-      placeholder="Describe the problem..."
-    />
-    <button type="submit">Add</button>
-  </form>
-</div>;
+    <form onSubmit={handleAddTicketSubmit} >
+      <input
+        id="desc"
+        type="text"
+        name="description"
+        placeholder="Describe the problem..."
+      />
+      <button type="submit">Add</button>
+    </form>
+  </div>;
 };
-  
 export default TicketTable;
+
+
+

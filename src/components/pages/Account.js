@@ -1,13 +1,8 @@
 import React from 'react';
-import NavBar from "../NavBar";
 import TicketTable from '../TicketTable';
-import Footer from "../Footer";
-import { useTable } from 'react-table';
-import AddIcon from '@material-ui/icons/Add';
 import { Button } from "@material-ui/core";
-import { useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
-import newTicket from '../TicketTable';
 
 
 const StyledButton = withStyles({
@@ -41,13 +36,6 @@ const StyledButton = withStyles({
 
 var ex = sessionStorage.getItem('NAME');
 function Account() {
-
-  window.addEventListener('onload', () => {
-    const NAME = sessionStorage.getItem('NAME');
-    document.getElementById('NAME').innerHTML = NAME;
-    const USER = sessionStorage.getItem("USER");
-    document.getElementById('USER').innerHTML = USER;
-  })
   return (
     <div className="App">
       <TicketTable />

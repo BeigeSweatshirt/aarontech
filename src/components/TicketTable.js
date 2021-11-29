@@ -4,6 +4,8 @@ import defaultTable from './mock-data.json';
 import { useLocation } from 'react-router-dom';
 
 function TicketTable() {
+  const location = useLocation()
+  console.log(location)
   const [table, setTable] = useState(() => {
     try {
       const value = sessionStorage.getItem('tableStorage');
@@ -23,6 +25,7 @@ function TicketTable() {
 
     const newRow = newTicketRow(document.getElementById('desc').value);
     const updatedTable = [...table, newRow];
+    console.log(newRow)
 
     sessionStorage.setItem('tableStorage', JSON.stringify(updatedTable));
     setTable(JSON.parse(sessionStorage.getItem('tableStorage')));

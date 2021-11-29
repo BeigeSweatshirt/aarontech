@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
-import "../Ticket.css"
+import "../css/Ticket.css"
 
 export function getProps() {
   let state = {

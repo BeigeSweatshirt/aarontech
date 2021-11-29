@@ -1,5 +1,5 @@
 import React from 'react'
-import './Cards.css';
+import './css/Cards.css';
 import CardItems from './CardItems'
 import malware from '../photos/malware.jpg'
 import backup from '../photos/backup.jpg'

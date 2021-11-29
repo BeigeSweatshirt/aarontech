@@ -2,12 +2,21 @@ import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import "../Ticket.css"
 
+export function getProps() {
+  let state = {
+    data: document.getElementById('desc').value
+  }
+  return state;
+}
+
 function Ticket(props) {
   const [desc, setDesc] = useState("");
 
   function inputDescription() {
     setDesc(document.getElementById('desc').value);
   }
+
+  
 
 
   //console.log(updatedName);  
@@ -45,14 +54,14 @@ function Ticket(props) {
       <Link
         to={{
           pathname: "/account",
-          state: {
-            data: "asdf"
-          }
-        }}>
+        }}
+        state={{ desc: desc }}>
+
         <input
           type="submit"
           value="Submit">
-        </input></Link>
+        </input>
+        </Link>
     </div >
   );
 }

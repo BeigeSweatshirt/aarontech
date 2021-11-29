@@ -23,6 +23,7 @@ function TicketTable() {
   const handleAddTicketSubmit = (event) => {
     event.preventDefault();
 
+    console.log("hello");
     const newRow = newTicketRow(document.getElementById('desc').value);
     const updatedTable = [...table, newRow];
     console.log(newRow)

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/Cards.css';
 import CardItems from '../CardItems'
-import shiva from '../../photos/shiva.jpg'
+import shiva from '../../photos/Shiva_selfie.JPG'
 import jacob from '../../photos/jacob.jpg'
 import matt from '../../photos/matt.jpg'
 
@@ -23,7 +23,7 @@ function Cards() {
             <CardItems
               src={matt}
               title="Web Dev"
-              text="Works on websites until 4AM. Likes gardening." />
+              text="PhD in googling : )" />
           </ul>
         </div>
       </div>

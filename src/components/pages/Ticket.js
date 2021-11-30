@@ -32,7 +32,9 @@ function Ticket(props) {
       <input
         type="password"
         id="pword"
-        placeholder="Password">
+        name="pword"
+        placeholder="Password"
+        minLength="8">
       </input>
       <input onChange={inputDescription}
         type="text"

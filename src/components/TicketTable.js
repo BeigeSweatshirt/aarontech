@@ -35,7 +35,7 @@ function TicketTable() {
   const newTicketRow = (desc) => {
     const row = {
       id: table.at(-1).id + 1,
-      date: getTodaysDate(),
+      date: getEstimatedDate(),
       status: "Received",
       description: desc
     };
@@ -43,9 +43,9 @@ function TicketTable() {
     return row;
   }
 
-  const getTodaysDate = () => {
+  const getEstimatedDate = () => {
     var today = new Date();
-    var dd = String(today.getDate() + 2).padStart(2, '0');
+    var dd = String(today.getDate() + 2).padStart(2, '0'); //estimated date is 2 days out
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     var yyyy = today.getFullYear();
     today = mm + '/' + dd + '/' + yyyy;

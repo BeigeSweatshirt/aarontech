@@ -16,18 +16,6 @@ function Ticket(props) {
     setDesc(document.getElementById('desc').value);
   }
 
-  
-
-
-  //console.log(updatedName);  
-  // const history = useNavigate();
-  // function handleSumbmit() {
-  // const USER = document.getElementById('user').value;
-  // alert(name);
-  // sessionStorage.setItem("USER", USER);
-  // console.log(sessionStorage.getItem("NAME"));
-  // history("/account");
-
 
   return (
     <div className="App" >
@@ -42,7 +30,7 @@ function Ticket(props) {
         placeholder="Email">
       </input>
       <input
-        type="text"
+        type="password"
         id="pword"
         placeholder="Password">
       </input>

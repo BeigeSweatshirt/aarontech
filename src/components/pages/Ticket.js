@@ -18,29 +18,28 @@ function Ticket(props) {
 
 
   return (
-    <div className="App" >
+    <div className="App" ><br/><br/>
       <input
         type="text"
         id="uname"
         placeholder="Username">
-      </input>
+      </input><br/><br/>
       <input
-        type="text"
+        type="email"
         id="email"
         placeholder="Email">
-      </input>
+      </input><br/><br/>
       <input
         type="password"
         id="pword"
-        name="pword"
         placeholder="Password"
         minLength="8">
-      </input>
+      </input><br/><br/>
       <input onChange={inputDescription}
         type="text"
         id="desc"
         placeholder="Describe your problem">
-      </input>
+      </input><br/><br/>
       <Link
         to={{
           pathname: "/account",

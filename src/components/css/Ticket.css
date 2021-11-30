@@ -1,25 +1,23 @@
 body {
     font-family: Arial;
   }
-  
-  input[type=text], select {
-    width: 60%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  input [type=password]{
+    width: 100%;
+    border: #ccc;
+    margin: auto;
   }
-  .pword {
+  input [type=email]{
+    width: 60%;
+    margin: auto;
+  }
+  input[type=text]{
     width: 60%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: auto;
     display: block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-
   }
   
   input[type=submit] {
@@ -27,7 +25,7 @@ body {
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: auto;
     border: none;
     border-radius: 4px;
     cursor: pointer;

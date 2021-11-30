@@ -8,7 +8,7 @@ import hardware from '../photos/hardware.jpg'
 function Cards() {
     return (
         <div className='cards'>
-            <h1>Services we offer</h1>
+            <h1>OUR SERVICES</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">

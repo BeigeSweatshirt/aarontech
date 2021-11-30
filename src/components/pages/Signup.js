@@ -40,9 +40,9 @@ const style = makeStyles({
     marginRight: 'auto',
     width: "8%",
     paddingTop: '1rem',
-    //  border: "10px solid #000",
-    // borderRadius: '50%',
-    // backgroundSize: 'cover'
+     border: "10px solid #000",
+    borderRadius: '50%',
+    backgroundSize: 'cover'
   },
   wrapper: {
     width: "65%",

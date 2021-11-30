@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 function TicketTable() {
   const location = useLocation()
+  const { desc } = location.state
   console.log(location)
   const [table, setTable] = useState(() => {
     try {
@@ -18,13 +19,14 @@ function TicketTable() {
     } catch (err) {
       console.log("problem with value");
     }
+    handleAddTicketSubmit(desc);
   });
 
-  const handleAddTicketSubmit = (event) => {
-    event.preventDefault();
+  function handleAddTicketSubmit (desc) {
+    // event.preventDefault();
 
     console.log("hello");
-    const newRow = newTicketRow(document.getElementById('desc').value);
+    const newRow = newTicketRow(desc);
     const updatedTable = [...table, newRow];
     console.log(newRow)
 

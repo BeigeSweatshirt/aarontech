@@ -10,7 +10,6 @@ import Signup from './components/pages/Signup';
 import Account from './components/pages/Account';
 import About from './components/pages/About'
 import Ticket from './components/pages/Ticket'
-//import Signup from './components/Signup';
 
 function App() {
   return (

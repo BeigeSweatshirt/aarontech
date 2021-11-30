@@ -1,7 +1,7 @@
 import { withStyles, makeStyles } from "@material-ui/core";
 import { Button } from '@material-ui/core'
 import { useNavigate } from "react-router";
-import account from '../../assets/account.png';
+import account from '../assets/account.png';
 
 const StyledButton = withStyles({
   root: {

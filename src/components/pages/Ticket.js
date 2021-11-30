@@ -23,18 +23,18 @@ function Ticket(props) {
         type="text"
         id="uname"
         placeholder="Username">
-      </input><br/><br/>
+      </input><br/>
       <input
         type="email"
         id="email"
         placeholder="Email">
-      </input><br/><br/>
+      </input><br/>
       <input
         type="password"
         id="pword"
         placeholder="Password"
         minLength="8">
-      </input><br/><br/>
+      </input><br/>
       <input onChange={inputDescription}
         type="text"
         id="desc"

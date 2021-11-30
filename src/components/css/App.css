@@ -2,21 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: PT Sans;
 }
-
-/* .home {
-  display: flex;
-  height: 90vh;
-  font-size: 10rem;
-} */
 
 .App {
   text-align: center;
   width: 100%;
   min-width: 1000px;
   height: auto;
-  font-family: Roboto;
+  font-family: PT Sans;
 }
 
 .App-logo {
@@ -37,6 +31,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-family: "Comic Sans MS";
   color: white;
 }
 

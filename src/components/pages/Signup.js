@@ -16,7 +16,7 @@ const StyledButton = withStyles({
     variant: 'h6',
     fontSize: '20px',
     boxSizing: "border-box",
-    fontFamily: 'Roboto',
+    fontFamily: 'PT Sans',
     cursor: "pointer",
     flexGrow: 1,
     "&:hover": {

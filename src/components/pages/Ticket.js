@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
-import "../Ticket.css"
+import "../css/Ticket.css"
 
 export function getProps() {
   let state = {
@@ -17,27 +17,28 @@ function Ticket(props) {
   }
 
   return (
-    <div className="App" >
+    <div className="App" ><br/><br/>
       <input
         type="text"
         id="uname"
         placeholder="Username">
-      </input>
+      </input><br/>
       <input
-        type="text"
+        type="email"
         id="email"
         placeholder="Email">
-      </input>
+      </input><br/>
       <input
-        type="text"
+        type="password"
         id="pword"
-        placeholder="Password">
-      </input>
+        placeholder="Password"
+        minLength="8">
+      </input><br/>
       <input onChange={inputDescription}
         type="text"
         id="desc"
         placeholder="Describe your problem">
-      </input>
+      </input><br/><br/>
       <Link
         to={{
           pathname: "/account",

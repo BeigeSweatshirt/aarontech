@@ -19,7 +19,7 @@ function Cards() {
             <CardItems
               src={jacob}
               title="Web Dev"
-              text="certified hackerman" />
+              text='"Codes Websites"' />
             <CardItems
               src={matt}
               title="Web Dev"

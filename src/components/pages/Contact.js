@@ -1,6 +1,6 @@
 import react from 'react'
-import Footer from '../Footer';
-import NavBar from '../NavBar';
+import Footer from '../widgets/Footer';
+import NavBar from '../widgets/NavBar';
 function Contact() {
     return (
         <div className="App">

@@ -1,0 +1,15 @@
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 200px;
+    box-sizing: border-box;
+    font-family: PT Sans;
+    cursor: pointer;
+    border-radius: 0;
+}
+.getStarted:hover{
+    color: #fff;
+    background: #4f25c8;
+}

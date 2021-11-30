@@ -86,6 +86,3 @@ function TicketTable() {
   </div>;
 };
 export default TicketTable;
-
-
-

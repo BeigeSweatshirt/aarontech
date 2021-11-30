@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@material-ui/core';
-import './HeroSection.css'
-import '../css/App.css';
+import './css/HeroSection.css'
+import './css/App.css';
 import Grid from './Grid';
 import GetStartedBtn from './GetStartedBtn';
 

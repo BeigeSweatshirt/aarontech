@@ -1,28 +1,30 @@
 import React from 'react'
 import '../css/Cards.css';
-import CardItems from '../CardItems'
-import shiva from '../../photos/Shiva_selfie.JPG'
-import jacob from '../../photos/jacob.jpg'
-import matt from '../../photos/matt.jpg'
+import '../css/About.css'
+import CardItems from '../widgets/CardItems'
+import shiva from '../assets/Shiva_selfie.JPG'
+import jacob from '../assets/jacob.jpg'
+import matt from '../assets/matt.jpg'
 
 function Cards() {
   return (
     <div className='cards'>
       <h1>Our Team</h1>
+      <h2 >AaronTech is a technology repair company that specializes in Windows computer repairs. </h2>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItems
               src={shiva}
-              title="Web Dev"
+              title="Shiva Shrestha"
               text="Born in Nepal. Stack Overflow consultant." />
             <CardItems
               src={jacob}
-              title="Web Dev"
+              title="Jacob Fisher"
               text='"Codes Websites"' />
             <CardItems
               src={matt}
-              title="Web Dev"
+              title="Matt Holford"
               text="PhD in googling : )" />
           </ul>
         </div>

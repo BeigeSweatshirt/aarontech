@@ -1,14 +1,14 @@
 import React from 'react'
-import './css/Cards.css';
-import CardItems from './CardItems'
-import malware from '../photos/malware.jpg'
-import backup from '../photos/backup.jpg'
-import hardware from '../photos/hardware.jpg'
+import '../css/Cards.css';
+import CardItems from '../widgets/CardItems'
+import malware from '../assets/malware.jpg'
+import backup from '../assets/backup.jpg'
+import hardware from '../assets/hardware.jpg'
 
 function Cards() {
     return (
         <div className='cards'>
-            <h1>Services we offer</h1>
+            <h1>OUR SERVICES</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">

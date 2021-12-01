@@ -5,6 +5,8 @@
   .btn {
     padding: 8px 20px;
     border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
     outline: none;
     border: none;
     cursor: pointer;
@@ -30,8 +32,12 @@
   }
   
   .btn--large {
-    padding: 12px 26px;
-    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 2px;
+    font-size: 3.3em;
   }
   
   .btn--large:hover,

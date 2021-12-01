@@ -1,7 +1,6 @@
 import React from 'react';
-import TicketTable from '../TicketTable';
+import TicketTable from '../widgets/TicketTable';
 import { Button } from "@material-ui/core";
-import { Link, useNavigate } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 
 

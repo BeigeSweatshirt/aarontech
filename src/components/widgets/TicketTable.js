@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+<<<<<<< HEAD:src/components/TicketTable.js
 import './css/TicketTable.css';
 import defaultTable from './mock-data.json';
+=======
+import '../css/TicketTable.css';
+import defaultTable from '../widgets/mock-data.json';
+import { useLocation } from 'react-router-dom';
+>>>>>>> 73cecce86ea672c22e23178ec93e33b9257b284f:src/components/widgets/TicketTable.js
 
 function TicketTable() {
   const [table, setTable] = useState(() => {

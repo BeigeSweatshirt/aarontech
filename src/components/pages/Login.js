@@ -1,6 +1,6 @@
 import { withStyles, makeStyles } from "@material-ui/core";
 import { Button } from '@material-ui/core'
-import login_icon from '../../photos/icon.png'
+import login_icon from '../assets/icon.png'
 import { useNavigate } from "react-router";
 
 const StyledButton = withStyles({

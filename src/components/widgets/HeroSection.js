@@ -1,9 +1,8 @@
-import React from 'react'
-import { Button } from '@material-ui/core';
-import './css/HeroSection.css'
-import './css/App.css';
-import Grid from './Grid';
-import GetStartedBtn from './GetStartedBtn';
+import React from 'react';
+import '../css/HeroSection.css';
+import '../css/App.css';
+import { Link } from 'react-router-dom';
+import '../css/Button.css'
 
 function HeroSection() {
     return (
@@ -17,7 +16,7 @@ function HeroSection() {
                 </Button>
             </div> */}
             <br/><br/><br/><br/><br/><br/>
-            <GetStartedBtn/>
+            <Link to='/ticket' className="btn--large">Get Started Today</Link>
         </div>
     )
 }

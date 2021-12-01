@@ -64,6 +64,14 @@ function Navbar() {
                             </Link>
                         </li>
 
+                        <li className='nav-item'>
+                            <Link to='/ticket'
+                                className='nav-links'
+                                onClick={closeMobileMenu}>
+                                Create Support Ticket
+                            </Link>
+                        </li>
+
                         <li>
                             <Link
                                 to='/signup'

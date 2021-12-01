@@ -2,9 +2,9 @@ import React from 'react'
 import '../css/Cards.css';
 import '../css/About.css'
 import CardItems from '../widgets/CardItems'
-import shiva from '../../assets/Shiva_selfie.JPG'
-import jacob from '../../assets/jacob.jpg'
-import matt from '../../assets/matt.jpg'
+import shiva from '../assets/Shiva_selfie.JPG'
+import jacob from '../assets/jacob.jpg'
+import matt from '../assets/matt.jpg'
 
 function Cards() {
   return (

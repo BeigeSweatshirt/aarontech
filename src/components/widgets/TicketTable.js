@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import '../css/TicketTable.css';
 import defaultTable from '../widgets/mock-data.json';
-import { useLocation } from 'react-router-dom';
 
 function TicketTable() {
   const [table, setTable] = useState(() => {

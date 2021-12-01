@@ -32,9 +32,13 @@
   }
   
   .btn--large {
+    margin-top: 20px;
     text-decoration: none;
     color: white;
-    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: 2px solid white;
     border-radius: 2px;
     font-size: 3.3em;
@@ -45,5 +49,5 @@
     transition: all 0.3s ease-out;
     background: #fff;
     color: #242424;
-    transition: 250ms;
+    transition: 350ms;
   }

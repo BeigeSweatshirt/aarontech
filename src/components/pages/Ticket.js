@@ -43,12 +43,10 @@ function Ticket(props) {
         to={{
           pathname: "/account",
         }}
-        // state={{ desc: desc }}
         >
 
         <input
-          type="submit"
-          value="Submit">
+          type="submit">
         </input>
         </Link>
     </div >

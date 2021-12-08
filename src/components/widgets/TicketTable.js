@@ -67,6 +67,10 @@ function TicketTable() {
         ))}
       </tbody>
     </table>
+  </div>;
+};
+export default TicketTable;
+/* this belongs between /table and /div
 
     <form onSubmit={handleAddTicketSubmit} >
       <input
@@ -77,6 +81,5 @@ function TicketTable() {
       />
       <button type="submit">Add</button>
     </form>
-  </div>;
-};
-export default TicketTable;
+
+    */

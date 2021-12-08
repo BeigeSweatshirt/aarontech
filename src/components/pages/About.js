@@ -17,15 +17,15 @@ function Cards() {
             <CardItems
               src={shiva}
               title="Shiva Shrestha"
-              text="Born in Nepal. Stack Overflow consultant." />
+              text="Born in Nepal. Junior" />
             <CardItems
               src={jacob}
               title="Jacob Fisher"
-              text='"Codes Websites"' />
+              text='Website dev. CS Junior' />
             <CardItems
               src={matt}
               title="Matt Holford"
-              text="PhD in googling : )" />
+              text="Android software dev and Junior at CWU" />
           </ul>
         </div>
       </div>

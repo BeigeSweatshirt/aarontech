@@ -21,7 +21,7 @@ function Cards() {
             <CardItems
               src={jacob}
               title="Jacob Fisher"
-              text='Develops websites. CS Junior' />
+              text='Website dev. CS Junior' />
             <CardItems
               src={matt}
               title="Matt Holford"
